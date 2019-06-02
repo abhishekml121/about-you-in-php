@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-size: 16px;
+        
+    }
+
+    main {
+        width: 80%;
+        margin: 0 auto;
+        background-color: aquamarine;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: sans-serif;
+        text-shadow: 0px 8px 0px #33bfbf;
+        margin-top: 0;
+    }
+   
+    h1 span {
+        color: rgba(85, 85, 85, 0.54);
+        display: block;
+        font-size: 16px;
+        text-shadow: 0px 0px 0px;
+    }
+    input, #submit, #label1{font-size: 25px;}
+    button:hover{cursor:pointer}
+    #start_game_btn{
+        padding: 8px; font-size: 25px;border-radius: 5px;margin-left: 10px;border-left: 5px solid #989898;border-top: 2px solid #989898;background: linear-gradient(45deg, #555,white);
+        position: sticky;bottom: 0px;
+    }
+    fieldset{display: inline-block; min-width:650px;padding-bottom: 0px;margin-bottom: 20px;}
+    legend{text-transform: capitalize;background-color: rgba(183, 183, 171, 0.67);padding:5px;color:#318027; font-family: sans-serif;letter-spacing: 1px;animation-duration: 2s;animation-timing-function: ease-in-out;}
+    fieldset p{margin-bottom: 5px ;transition: 0.7s; transition-timing-function: cubic-bezier(.2,.18,.68,.28);}
+    #win_info{margin-top: 20px;}
+    @keyframes animi{
+        from{background-color: yellow}
+        to{background-color: rgba(183, 183, 171, 0.67);}
+    }
+    #remaining{padding: 9px;background-color: royalblue;position: absolute;top: 0.7em;right: 0 }
+    
+   
+    
+</style>
+</head>
+
+<body>
+   <main>
+   <header>
+    <h1>The Guess game... <span>_make your mind sharper_</span><hr></h1>
+    </header>
+    <p style="font-size: 18px">I'm thiking number between <big>1</big> and <big>50</big>. Try to guess the number.</p>
+    <label for="user_guess" id="label1">Guess : </label> <input type="text" id="user_guess_input" placeholder="disabled">
+    <button id="submit">submit</button> <br><br>
+    <fieldset style="position: relative;">
+  <legend>You Guessed</legend>
+  <p id="guessed_info"></p> <span id="remaining" title="chance left"></span>
+ </fieldset>
+  
+   <fieldset>
+       <legend>Detail about previous guess</legend>
+       <p id="para_info"></p>
+   </fieldset>
+    
+    <fieldset>
+        <legend>Win Info</legend>
+        <p id="win_info"></p>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Invalid guess</legend>
+            <p id="wrong" style="color: red;
+            "></p>
+        </fieldset>
+        <br><br>
+    <button id="start_game_btn">Start the game</button>
+    
+    
+    
+    
+</main>
+
+    <script>
+        let start_game_btn = document.getElementById('start_game_btn');
+        let submit_btn = document.getElementById('submit');
+        let user_guess_input = document.getElementById('user_guess_input');
+        let total_chance = 10;
+        let computer_guess;
+        let push_guesses_to_array = [];
+        let guessed_info = document.getElementById('guessed_info');
+        let para_info = document.getElementById('para_info');
+        let wrong_info = document.getElementById('wrong');
+        let win_info = document.getElementById('win_info');
+        let wrong=[];
+        let legend = document.querySelectorAll('legend');
+        let remaining = document.getElementById('remaining');
+        
+        user_guess_input.disabled=true;
+        submit_btn.disabled=true;
+         submit_btn.style.cursor='auto';
+        
+        function game_started(e){
+             guessed_info.textContent='';
+             win_info.textContent='';
+            start_game_btn.disabled=true;
+            start_game_btn.style.cursor='auto';
+             submit_btn.style.cursor='pointer';
+            start_game_btn.style.color='#484848';
+            user_guess_input.disabled=false;
+            submit_btn.disabled=false;
+            user_guess_input.placeholder='try to guess';
+            para_info.textContent='';
+            user_guess_input.focus();
+            computer_guess = Math.floor(Math.random() * 50) + 1; 
+            remaining.textContent=total_chance;
+        }
+        
+        
+        
+        function remove_animation(){
+            legend.forEach(function(element){
+                element.removeAttribute('style');
+            });
+        }
+        function reset(){
+            start_game_btn.disabled=false;
+                user_guess_input.disabled=true;
+                submit_btn.disabled=true;
+            wrong_info.textContent='';
+           
+            start_game_btn.style.cursor='pointer';
+            submit_btn.style.cursor='auto';
+                push_guesses_to_array = [];
+            wrong = [];
+            remaining.textContent='';
+                start_game_btn.style.color='black';
+            total_chance = 10;
+        }
+        
+        function user_guess_func(e){
+            /*runs only if player has chance*/
+            if(total_chance >1){
+                remove_animation();
+                para_info.style.fontSize="20px";
+                start_game_btn.style.cursor='auto';
+                para_info.style.backgroundColor='';
+            let guessed = user_guess_input.value;
+                /*runs only if player insert number only*/
+                if(!isNaN(user_guess_input.value) && (user_guess_input.value.indexOf(' ') == -1) && (user_guess_input.value.length !=0)){
+                    push_guesses_to_array.push(guessed);
+                   guessed_info.innerHTML = '<pre>' + push_guesses_to_array.join("  ") + '</pre>'; 
+                    user_guess_input.value='';
+                     user_guess_input.focus();
+                    if(guessed < computer_guess){
+                para_info.textContent='You guessed low !';
+            }
+            else{
+                para_info.textContent='You guessed high !';
+            }
+                    if(guessed == computer_guess){
+                user_guess_input.value='';
+                win_info.textContent='You won !';
+               win_info.style.backgroundColor='#4aa34a';
+                        win_info.style.fontSize="50px";
+                        reset();
+                
+            }
+                     total_chance--;
+                    remaining.textContent=total_chance;
+                }
+                else{
+                    /*console.log(wrong.length);*/
+                    if(wrong.length <=2){
+                        
+                    wrong.push(guessed);
+                    wrong_info.innerHTML= '<pre>'+wrong.join("  ");+'</pre>';
+                    user_guess_input.value='';
+                    user_guess_input.focus();
+                    para_info.innerHTML='<big>Wrong</big> input !';
+                        legend[1].setAttribute("style", "animation-name: animi;");
+                    }
+                    else{
+                        
+                        reset();
+                    }
+                }
+            
+            } // if(total_chance >1) --END--
+            else{
+                para_info.innerHTML="You have no chance left ! <br>" + 'My number was : ' + computer_guess;
+              
+                reset();
+            }
+        }
+           
+        start_game_btn.addEventListener('click', game_started);
+        submit_btn.addEventListener('click', user_guess_func);
+
+    </script>
+</body>
+
+</html>

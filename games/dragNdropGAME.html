@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <style>
+        main {
+            width: 22%;
+            background-color: #a8a8a8;
+            padding: 10px;
+            float: left;
+        }
+
+        main img {
+            width: 49.2%;
+        }
+
+        img {
+            box-shadow: 0px 0px 0px 5px;
+        }
+
+        article {}
+
+        aside {
+            border: 2px solid green;
+            display: inline-block;
+            margin-left: 25px;
+            max-height: 420px;
+            max-width: 616px;
+            overflow-y:scroll;
+            position: relative;
+
+        }
+
+        aside ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background-color: red;
+            border-right: 1px solid black;
+            
+            
+        }
+
+        aside ul li {
+            margin-right: 5px;
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            position: sticky;bottom: 0;
+            
+        }
+        
+        /*----------------------------*/
+        
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 16px;
+    width: 50%;
+}
+
+.container img{
+        width:48%;    
+        }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 336px;
+    top: 0;
+    width: 47.8%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+       
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+        
+
+        
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    
+    .cancelbtn {
+       width: 100%;
+    }
+}
+        /*----------------------------*/
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <img src="./images1/1%20.png" alt="1" style="background-color: red" class="img_left">
+            
+            <img src="images1/2%20.png" alt="2" style="background-color: red" class="img_left">
+            
+            <img src="images1/3%20.png" alt="3" style="background-color: blue" class="img_left">
+            <img src="images1/4%20.png" alt="4" style="background-color: blue" class="img_left">
+            <img src="images1/5%20.png" alt="5" style="background-color: yellowgreen" class="img_left">
+            <img src="images1/6%20.png" alt="6" style="background-color: yellowgreen" class="img_left">
+            <img src="images1/7%20.png" alt="7" style="background-color: firebrick" class="img_left">
+            <img src="images1/8%20.png" alt="8" style="background-color: firebrick" class="img_left">
+            <img src="images1/9%20.png" alt="9" style="background-color: lightcoral" class="img_left">
+            <img src="images1/10%20.png" alt="10" style="background-color: lightcoral" class="img_left">
+            <img src="images1/11%20.png" alt="11" style="background-color:orange" class="img_left">
+            <img src="images1/12%20.png" alt="12" style="background-color: orange" class="img_left">
+            <img src="images1/13%20.png" alt="13" style="background-color: indigo" class="img_left">
+            <img src="images1/14%20.png" alt="14" style="background-color: indigo" class="img_left">
+            <img src="images1/15%20.png" alt="15" style="background-color: orangered" class="img_left">
+            <img src="images1/16%20.png" alt="16" style="background-color: orangered" class="img_left">  
+        </article>
+
+    </main>
+
+    <aside>
+        <ul>
+        </ul>
+    </aside>
+
+<!-- Duplicate image will POPUP of original image -->
+<div id="id01" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+        <img src="images1/1%20.png" alt="1" style="background-color: red">
+            <img src="images1/2%20.png" alt="2" style="background-color: red">
+            <img src="images1/3%20.png" alt="3" style="background-color: blue">
+            <img src="images1/4%20.png" alt="4" style="background-color: blue">
+            <img src="images1/5%20.png" alt="5" style="background-color: yellowgreen">
+            <img src="images1/6%20.png" alt="6" style="background-color: yellowgreen">
+            <img src="images1/7%20.png" alt="7" style="background-color: firebrick">
+            <img src="images1/8%20.png" alt="8" style="background-color: firebrick">
+            <img src="images1/9%20.png" alt="9" style="background-color: lightcoral">
+            <img src="images1/10%20.png" alt="10" style="background-color: lightcoral">
+            <img src="images1/11%20.png" alt="11" style="background-color:orange">
+            <img src="images1/12%20.png" alt="12" style="background-color: orange">
+            <img src="images1/13%20.png" alt="13" style="background-color: indigo">
+            <img src="images1/14%20.png" alt="14" style="background-color: indigo">
+            <img src="images1/15%20.png" alt="15" style="background-color: orangered">
+            <img src="images1/16%20.png" alt="16" style="background-color: orangered">
+      
+    </div>
+<div style="background-color: goldenrod; padding: 20px;font-weight: bold;text-align:center" id="text_color">HAHA I AM DOING SOME FUNNY STUFS WITH JAVASCRIPT.</div>
+    
+  </div>
+</div>
+
+    <script>
+        // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    
+     if(document.getElementById('id01').style.display=='none'){
+         clearInterval(text_btm_color);}
+}
+       
+        let main = document.querySelector('main');
+        
+        let img_all = document.querySelectorAll('.img_left');
+        let dup_main = img_all;
+        let ul = document.querySelector('ul');
+        let undo = 0,stop = 0;
+        let arr1 = [],list='';
+        let arr2=[];
+        let container =document.querySelector('.container');
+        let conta =document.querySelectorAll('.container img');
+        let text_btm_color="";
+        function random() {
+            let rand = Math.floor(Math.random() * 255);
+            return rand;
+        }
+
+        let time_2_sec = setInterval(function change_bg_color() {
+            
+            img_all.forEach(function(element) {
+                let bgclr = 'rgb(' + random() + ',' + random() + ',' + random() + ')';
+                
+                element.style.backgroundColor = bgclr;
+                if(stop < 6){
+                let li = document.createElement('li');
+                li.style.backgroundColor = bgclr;
+                ul.appendChild(li);
+                    arr1.push(bgclr);
+                    list = document.querySelectorAll('li');
+                    
+                    /* # When you click on list tiles then a duplicate image is POPUP every time.
+                    # The background-color of the popuped image must be equal to the background-color of the clicked list item.
+                    
+                    */
+                    li.addEventListener('click',function(e){
+                       document.getElementById('id01').style.display='block';
+                        
+                        text_btm_color = setInterval(function(){
+                            document.getElementById('text_color').style.color='rgb(' + random() + ',' + random() + ',' + random() + ')';
+                          
+                               
+                        },100);
+                        
+                        
+                        let demo_color = e.target.style.backgroundColor;
+                        let con_img = container.children;
+                        for(let i = 0; i<con_img.length; i++){
+                            con_img[i].style.backgroundColor=demo_color;
+                        }
+                        /*console.log(e.target.style.backgroundColor);
+                        console.log(con_img);*/
+                    });
+                    
+                }
+                
+            });
+            stop++;
+        }, 2000);
+        
+       
+        let list_shadow_count = 0;
+        let ff =0;
+        let mouse_image_count = 0;
+        function shadow_list(){
+               if(list_shadow_count < list.length){
+                   
+               list[list_shadow_count].style.boxShadow='0px 0px 40px black';
+              
+              /* console.log(list_shadow_count,list.length);*/
+                   if(list_shadow_count>0){
+                list[ff].style.boxShadow='0px 0px 0px black';
+                 ff++;
+            }
+               
+                   if(list_shadow_count >=95){
+                       list[list_shadow_count].style.boxShadow='0px 0px 0px black';
+                       list_shadow_count=0;
+                       ff = 0;
+                   }
+                   list_shadow_count++;  
+               } 
+            }
+        setInterval(shadow_list,50);
+        
+        /* Change the mouse cursor to image */
+        
+            ul.addEventListener('mouseover',function(){
+           /* let list_all = ul.children;
+            if((mouse_image_count <= 95)){*/
+                setInterval(function(){
+                ul.style.cursor= "url('images/ro1.png'),auto";
+                    setTimeout(function(){
+                    ul.style.cursor="url('images/1024px-Geological_hammer.svg_50x50.png'),auto";
+                   /* alert('out');*/
+                    },200);
+               /* mouse_image_count++;   */ 
+                                       /* alert('interval');*/
+
+                },500);
+                
+            /*}*/
+                
+        },false);
+       
+      
+        
+    </script>
+
+</body>
+
+</html>
