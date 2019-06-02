@@ -1,0 +1,1652 @@
+body {
+    background-color: #eedbff;
+    font-size: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+#my_games_div img:hover{
+    animation-name:zo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+@keyframes zo{
+    0%{
+        transform: scale(1.0);
+    }
+    
+    50%{
+        transform: scale(0.8);
+    }
+    
+    100%{
+        transform: scale(1.0);
+    }
+
+}
+
+#my_games_div ul h1{
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.24), rgba(226, 255, 0, 0.28));
+    border-left: 35px solid hotpink;
+    margin: 0px;
+    padding: 12px;
+    font-size: 35px;
+}
+#my_games_div ul li h3{
+    
+    margin-top: 0px;
+}
+#my_games_div ul li{ width: 250px; padding: 20px;display: inline-block;}
+
+#my_games_div ul li img{ width: 100%}
+#my_games_div ul li h3{background-color:  rgba(255, 0, 0, 0.24);
+ display: inline-block;
+ width: 100%;
+ text-align: center;
+font-size: 20px;padding: 5px;
+}
+
+/*--STARTS---info_1info_1info_1info_1info_1info_1 --STARTS--*/
+#about_web {}
+
+#about_web .rel  {
+    position: relative;
+
+}
+
+#about_web #web_info1 aside{
+    /*float: left;*/
+    
+    position: absolute;
+}
+
+
+#about_web #web_info1 aside:nth-child(2) {
+    height: 232px;
+    width: 40%;
+}
+
+#about_web #web_info1 aside:nth-child(odd) {
+    background-color: rgba(39, 168, 39, 0.9);
+    width: 20%;
+}
+
+#web_info1 aside img {
+    width: 85%;
+}
+
+#about_web #web_info1 aside:nth-child(1) {
+    z-index: 5;
+    left: 300px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info1 aside:nth-child(2) {
+    z-index: 10;
+    left: 400px;
+    background-color: rgba(248, 143, 129, 0.99);
+    transition: 0.5s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#about_web #web_info1 aside:nth-child(3) {
+    z-index: 5;
+    left: 770px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info1 #aside2 p {
+    color: #d9c9c9;
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 25px;
+    margin-top: 65px;
+}
+
+/* #about_web #web_info1 #aside2:hover{
+    filter: blur(5px);
+} */
+#about_web #web_info1 #aside2:hover p {
+    /* transform: scale(0.8); */
+   color: aliceblue;
+    background-color: rgba(250, 155, 142, 0.99);
+
+}
+
+/*--ENDS---info_1info_1info_1info_1info_1info_1 --ENDS--*/
+
+
+
+/*info_2info_2info_2info_2info_2info_2 --START--*/
+#about_web #web_info2 aside{
+    position: absolute;
+}
+#about_web #web_info2 {
+    top: 280px;
+
+}
+
+#about_web #web_info2 aside:nth-child(odd) {
+    background-color: rgba(39, 168, 39, 0.9);
+    width: 20%;
+}
+
+#web_info2 aside img {
+    width: 85%;
+}
+
+#about_web #web_info2 aside:nth-child(1) {
+    z-index: 5;
+    left: 300px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info2 aside:nth-child(2) {
+    height: 231px;
+    z-index: 10;
+    left: 400px;
+    background-color: rgba(248, 143, 129, 0.99);
+    transition: 0.5s;
+    width: 40%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#about_web #web_info2 aside:nth-child(3) {
+    z-index: 5;
+    left: 770px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info2 #aside2_info2 p {
+    color: #d9c9c9;
+   /* background-color: silver;*/
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 25px;
+    margin-top: 65px;
+}
+
+
+#about_web #web_info2 #aside2_info2:hover p {
+    /* transform: scale(0.8); */
+   color: aliceblue;background-color: rgba(250, 155, 142, 0.99);
+
+}
+/*--ENDS---info_2info_2info_2info_2info_2info_2 --END--*/
+
+
+/*--STARTS---info_3info_3info_3info_3info_3info_3 --STARTS--*/
+#about_web #web_info3 aside{
+    position: absolute;
+}
+#about_web #web_info3 {
+    top: 563px;
+
+}
+
+#about_web #web_info3 aside:nth-child(odd) {
+    background-color: rgba(39, 168, 39, 0.9);
+    width: 20%;
+}
+
+#web_info3 aside img {
+    width: 85%;
+}
+
+#about_web #web_info3 aside:nth-child(1) {
+    z-index: 5;
+    left: 300px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info3 aside:nth-child(2) {
+    height: 231px;
+    z-index: 10;
+    left: 400px;
+    background-color: rgba(248, 143, 129, 0.99);
+    transition: 0.5s;
+    width: 40%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#about_web #web_info3 aside:nth-child(3) {
+    z-index: 5;
+    left: 770px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info3 #aside2_info3 p {
+    color: #d9c9c9;
+   /* background-color: silver;*/
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 25px;
+    margin-top: 65px;
+}
+
+
+#about_web #web_info3 #aside2_info3:hover p {
+    /* transform: scale(0.8); */
+   color: aliceblue;background-color: rgba(250, 155, 142, 0.99);
+
+}
+/*--ENDS---info_3info_3info_3info_3info_3info_3 --END--*/
+
+
+/*--STARTS---info_4info_4info_4info_4info_4info_4 --STARTS--*/
+#about_web #web_info4 aside{
+    position: absolute;
+}
+#about_web #web_info4 {
+    top: 846px;
+
+}
+
+#about_web #web_info4 aside:nth-child(odd) {
+    background-color: rgba(39, 168, 39, 0.9);
+    width: 20%;
+}
+
+#web_info4 aside img {
+    width: 85%;
+}
+
+#about_web #web_info4 aside:nth-child(1) {
+    z-index: 5;
+    left: 300px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info4 aside:nth-child(2) {
+    height: 231px;
+    z-index: 10;
+    left: 400px;
+    background-color: rgba(248, 143, 129, 0.99);
+    transition: 0.5s;
+    width: 40%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#about_web #web_info4 aside:nth-child(3) {
+    z-index: 5;
+    left: 770px;
+    transition: 0.5s cubic-bezier(.77, -0.21, .18, .75);
+
+}
+
+#about_web #web_info4 #aside2_info4 p {
+    color: #d9c9c9;
+   /* background-color: silver;*/
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 25px;
+    margin-top: 65px;
+}
+
+
+#about_web #web_info4 #aside2_info4:hover p {
+    /* transform: scale(0.8); */
+   color: aliceblue;background-color: rgba(250, 155, 142, 0.99);
+
+}
+/*--ENDS---info_4info_4info_4info_4info_4info_4 --END--*/
+
+
+header {
+    text-align: left;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    display: inline-block;
+
+}
+
+header h1 {
+    margin-left: 22px;
+    font-size: 1.8em;
+
+}
+
+#nav_of_index_page ul li {
+    margin: 0px 0px 15px 0px;
+}
+
+#nav_of_index_page > ul {
+    list-style-type: circle;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#user_submenu {
+    display: none;
+}
+
+nav {
+    max-width: 248px;
+
+}
+
+#show_user_submenu:hover #user_submenu {
+    display: block;
+}
+
+#show_user_submenu a {
+    text-decoration: none;
+}
+
+#down_icon {
+    margin-left: 5px;
+    color: green;
+    font-size: 20px;
+}
+
+hr {
+    width: 550px;
+    margin-left: 0px;
+}
+
+#register label,
+#login label,
+#edit_profile label {
+    width: 155px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+input {
+    font-size: 1.05em
+}
+
+#register textarea,
+#edit_profile textarea {
+    width: 350px;
+    height: 100px;
+    background-color: #d1d1d1;
+}
+
+#register_submit input,
+#edit_profile_submit input {
+    font-size: 1.5em;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#login_submit input {
+    font-size: 1.5em;
+    width: 231px;
+    background-image: url('../images/login-button-png-12.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#register,
+#login,
+#edit_profile {
+    position: relative;
+}
+
+#register span {
+    color: white
+}
+
+#register input:focus + span {
+    color: #38ce28;
+    font-size: 25px;
+    font-weight: bold
+}
+
+.border {
+    border-right: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+}
+
+#register_image {
+    background-image: url('../images/profile_images/guilherme-stecanella-366390-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 175px;
+    height: 676px;
+    float: left;
+    border-right: 1px solid #6d6363;
+    -webkit-box-shadow: 10px 0 5px -2px black;
+    box-shadow: 2px 0 12px -2px black;
+    transition: 0.5s all ease-in-out;
+}
+
+#login_image {
+    background-image: url('../images/profile_images/noufal-tariq-719416-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 175px;
+    height: 254px;
+    float: left;
+    border-right: 1px solid #6d6363;
+    -webkit-box-shadow: 10px 0 5px -2px black;
+    box-shadow: 3px 0 12px -2px black;
+    transition: 0.5s all ease-in-out;
+}
+
+#edit_profile_page_image {
+    background-image: url('../images/profile_images/matthew-skinner-196-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 175px;
+    height: 676px;
+    float: left;
+    border-right: 1px solid #6d6363;
+    -webkit-box-shadow: 10px 0 5px -2px black;
+    box-shadow: 3px 0 12px -2px black;
+    transition: 0.5s all ease-in-out;
+}
+
+#register_image:hover,
+#login_image:hover,
+#edit_profile_page_image:hover {
+    box-shadow: 0px 0 0px 0px black;
+}
+
+form {
+    padding-left: 180px;
+    /* 180px default */
+    background-image: url('../images/profile_images/guilherme-stecanella-366390-unsplash.jpg');
+    padding-right: 5px;
+    transition: 0.2s all ease-in;
+}
+
+#register input,
+#login input,
+#edit_profile input {
+    background-color: #d1d1d1;
+}
+
+#register input:focus,
+#login input:focus,
+#edit_profile:focus {
+    background-color: #c7a1a1;
+}
+
+.errors {
+    display: inline-block;
+    border: 1px solid red;
+    color: red;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.errors ol {
+    margin-bottom: 0;
+    padding-left: 1em;
+    font-size: 0.9em;
+    color: #DC4545;
+}
+
+/* ERRORS IN my_songs page */
+#myModall_song .errors {
+    display: inline-block;
+    border: 1px solid red;
+    color: red;
+    padding: 1em;
+    padding-top: 0.4em;
+    margin-bottom: 0em;
+    font-size: 1.8em;
+    background-color: lightblue;
+    overflow: auto;
+}
+
+#myModall_song .errors ol {
+    margin-bottom: 0;
+    padding-left: 1em;
+    font-size: 0.7em;
+    color: #DC4545;
+}
+
+#part_of_footer {
+    border: 5px solid white;
+    border-bottom: 0px;
+    text-align: center;
+    position: absolute;
+    bottom: 44px;
+    z-index: -10;
+    left: 42%;
+    right: 42%;
+    background-color: rgba(0, 0, 255, 0.4);
+    display: inline-block;
+    padding: 10px;padding-bottom: 0px;padding-top: 5px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    transition: 0.5s all cubic-bezier(.52, .09, .18, 1.38);
+    cursor: pointer;
+    transition-delay: 0.5s;
+
+}
+
+#part_of_footer_demo {
+    border: 1px solid white;
+    border-bottom: 0px;
+    text-align: center;
+    position: absolute;
+    bottom: 81px;
+    z-index: 0;
+    left: 42%;
+    right: 42%;
+    background-color: rgba(0, 0, 255, 0.4);
+    display: inline-block;
+    padding: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: 0.5s all cubic-bezier(.52, .09, .18, 1.38);
+    transition-delay: 0.5s;
+
+}
+
+footer #footer_logo,
+#footer_demo #footer_logo_demo {
+    position: absolute;
+    left: 48%;
+    right: 48%;
+    bottom: 15px;
+    padding: 0px;
+}
+
+#footer_logo img,
+#footer_logo_demo img {
+    width: 50px;
+}
+
+
+
+footer {
+    /*margin-top: 175px;*/
+    clear: both;
+    
+    background-color: rgba(0, 0, 255, 0.4);
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    position: relative;
+
+
+
+
+}
+
+footer div {
+    padding: 20px;
+    background-color: royalblue;
+}
+
+footer #top_symbol {
+    font-size: 28px;
+    color: #292186;
+}
+
+footer .ttp{
+    
+    vertical-align: super;
+}
+
+#members {
+   
+    margin-bottom: 80px;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    padding: 10px;
+    border-collapse: collapse
+}
+#members table{
+   
+    border: 10px solid lightgrey;
+
+}
+#members th,td{
+   
+    border: 1px solid silver;
+
+}
+
+
+/*------view profile styling---------*/
+#view_profile {
+
+    display: flex;
+}
+
+#show_profile {
+    margin-left: 200px;
+}
+
+#show_profile aside {
+    float: left;
+
+}
+
+#show_profile img {}
+
+#left_aside {
+    position: relative;
+}
+
+#left_aside img {
+    max-width: 450px;
+    height: 508px;
+}
+
+#left_aside img {
+    position: absolute;
+    left: 150px;
+    z-index: -1;
+    transition: 0.5s all cubic-bezier(.52, .09, .18, 1.38);
+}
+
+#right_aside {
+    opacity: 0.9;
+    margin-left: 350px;
+    background-color: #6b9e90;
+    box-shadow: -10px 0px 10px -10px black;
+    transition: 0.5s all cubic-bezier(.52, .09, .18, 1.38);
+}
+
+#show_profile:hover #left_aside img {
+    left: 13px
+}
+
+#right_aside:hover {
+    margin-left: 410px;
+    opacity: 0.94;
+}
+
+#login_err .account_not_found {
+    color: #ab0e0e;
+}
+
+#edit_profile_form #first_name,
+#edit_profile_form #middle_name,
+#edit_profile_form #last_name {
+    opacity: 0.4;
+}
+
+form#delete_account_form {
+    padding: 20px;
+    padding-left: 0px;
+    display: inline-block;
+    background-color: firebrick;
+    transition: 0.2s all ease-in;
+    width: 445px;
+}
+
+
+#delete_account_div {
+    position: relative;
+    background-color: aqua;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#delete_button {
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+span#delete_button_color {
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    transition: 0.9s all ease-in;
+}
+
+.span_for_common {
+    background-color: rgba(214, 122, 182, 0.42);
+    border-radius: 10px;
+    border: 1px dotted red;
+    transition: 0.9s all ease-in;
+    margin: 5px;
+    padding-right: 4px;
+}
+
+
+/*modal for delete account page*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+    height: 550px;
+}
+
+.loader {
+    position: absolute;
+    left: 43%;
+    bottom: 50%;
+    border: 16px dashed #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px dashed #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 0.01s linear infinite;
+    /* Safari */
+    animation: spin 0.3s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*modal for delete account page -------END---------*/
+
+
+/*styling for collections.php page -------START---------*/
+#collections {}
+
+#collections .left_aside_stick_collections {
+    background-color: lightblue;
+    /*display: inline-block;*/
+    float: left;
+    top: 30%;
+    padding-right: 20px;
+    position: fixed;
+    margin-left: -8px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 0px 15px -10px black;
+    z-index: 2;
+
+}
+
+#collections .left_aside_stick_collections ul {
+    padding-left: 10px;
+    list-style-type: none;
+    position: ;
+    margin-left: -325px;
+    transition: 0.5s all cubic-bezier(.56, -0.73, .22, 1.04);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(73, 239, 156);
+    transition-delay: 0.7s;
+    /*    .56,-0.51,.68,1.58*/
+}
+
+#collections .left_aside_stick_collections:hover ul {
+    margin-left: -8px;
+    transition-delay: 0s;
+}
+
+#collections .left_aside_stick_collections:hover {
+    box-shadow: 10px 0px 15px -10px red;
+}
+
+#collections .left_aside_stick_collections li {
+    font-size: 1.6em;
+    padding: 5px 5px 5px 8px;
+    border-bottom: 1px solid white;
+    background-image: url(../images/contacts.png);
+    background-repeat: no-repeat;
+    background-position: 2px 50%;
+
+}
+
+#collections .left_aside_stick_collections li:nth-child(1) {
+    background-image: url(../images/your_details.png);
+}
+
+#collections .left_aside_stick_collections li:nth-child(2) {
+    background-image: url(../images/contacts.png);
+}
+
+#collections .left_aside_stick_collections li:nth-child(3) {
+    background-image: url(../images/music.png);
+}
+
+#collections .left_aside_stick_collections li:nth-child(4) {
+    background-image: url(../images/to_do_app.png);
+    border-bottom: 0px;
+}
+
+#collections .left_aside_stick_collections a {
+    text-decoration: none;
+    width: 250px;
+    display: inline-block;
+    padding: 12px 12px 12px 45px;
+    transition: 0.2s all ease-in-out;
+
+}
+
+#collections .left_aside_stick_collections a:hover {
+    padding: 12px 0px 12px 57px;
+    color: hotpink;
+}
+
+
+#collections .right_aside_collections {
+    /*max-width: 850  --------before*/
+    max-width: 900px;
+}
+#collections .right_aside_collections #ff101{margin-left: 35px;padding: 20px;padding-left: 0px;
+    }
+    #collections .right_aside_collections #ff101 a{color: green;font-size: 18px}
+#collections .right_aside_collections #ff101  div{
+     border:1px dotted red;padding-left: 10px;
+     color: #FC5151;
+
+}
+#collections .right_aside_collections h1 {
+    font-size: 25px;
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.24), rgba(226, 255, 0, 0.28));
+    margin-bottom: 2px;
+    padding: 13px;
+    margin-left: 0px;
+    border-left: 35px solid hotpink;
+
+}
+
+#collections .right_aside_collections form {
+    font-size: 23px;
+
+}
+
+#collections .right_aside_collections form .label_input_div {
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 0px;
+}
+
+#collections .right_aside_collections form label {
+    display: inline-block;
+    width: 150px;
+}
+
+#collections .right_aside_collections form .label_input_div input {
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.24), rgba(226, 255, 0, 0.28));
+}
+
+#collections .right_aside_collections form .label_input_div input:focus,
+#collections .right_aside_collections form textarea:focus {
+    background-image: linear-gradient(-90deg, rgba(226, 255, 0, 0.28), rgba(88, 255, 0, 0.38));
+
+}
+
+#collections .right_aside_collections form textarea {
+    resize: none;
+    width: 314px;
+    height: 100px;
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.24), rgba(226, 255, 0, 0.28));
+    font-size: 18px
+}
+
+
+#collections form #label_for_address {
+    vertical-align: top;
+
+}
+
+#collections form #label_for_profile_pic {
+    background-image: linear-gradient(-90deg, rgba(226, 255, 0, 0.28), rgba(88, 255, 0, 0.38));
+}
+
+#collections form #profile_pic {
+    cursor: pointer;
+}
+
+#collections form #state,
+#collections form #blood_group {
+    font-size: 23px;
+}
+
+#collections form #collections_submit_btn {
+    width: 473px;
+    font-size: 30px;
+    background-color: rgb(70, 70, 70);
+    color: whitesmoke;
+    border: 5px outset white;
+    border-radius: 10px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    text-align: right
+}
+
+/*styling for collections.php page -------END---------*/
+
+
+/* styling for my_details page ----START------ */
+#show_my_all_details_section {
+    background-color: dodgerblue;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding: 12px 5px 12px 25px;
+    margin-bottom: 80px;
+
+}
+
+#show_my_all_details_section #show_my_all_details_article {
+    background-color: rgba(135, 189, 242, 0.51);
+    width: 67%;
+    float: left;
+    padding-left: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+    border-top-right-radius: 12px
+}
+
+/* SCROLLBAR STYLING --------------STRAT----------- */
+/* SCROLLBAR STYLING --------------STRAT----------- */
+
+#show_my_all_details_article::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    border-radius: 12px
+}
+
+#show_my_all_details_article::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(190deg, rgba(255, 0, 0, 0.44), rgba(226, 255, 0, 0.48));
+    border-bottom: 1px solid hotpink;
+    border-top: 1px solid hotpink;
+    border-radius: 12px;
+}
+
+/* SCROLL BAR STYLING --------------ENDS----------- */
+/* SCROLL BAR STYLING --------------ENDS----------- */
+
+
+
+
+#show_my_all_details_section #user_details_image {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin-left: 5px;
+
+
+}
+
+#show_my_all_details_section #user_details_image img {
+    width: 100%;
+    height: 250px;
+}
+
+#show_my_all_details_section #user_details_image #serch_your_detail_div {
+    background-color: royalblue;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+#show_my_all_details_section #user_details_image #serch_your_detail_input {
+    background-image: url('../images/searchicon.png');
+    background-position: 3px 1px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 26px;
+        width: 80%;
+    margin-left: 11px;
+    border-radius: 12px;
+    outline: none;
+
+
+}
+
+#show_search_result {
+    padding-left: 10px;
+}
+
+#show_my_all_details_section #show_my_all_details_article div {
+    margin-bottom: 30px;
+    transition: 0.5s all;
+}
+
+#show_my_all_details_section #show_my_all_details_article div:hover {
+    /*      background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.24), rgba(226, 255, 0, 0.28));
+*/
+    background-color: rgba(135, 189, 242, 0.51);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+
+#show_my_all_details_section #show_my_all_details_article div h3 {
+    margin-bottom: -7px;
+    font-size: 1.5em;
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.24), rgba(226, 255, 0, 0.28));
+    color: #292828;
+    border-left: 0px solid #6D70A5;
+    padding-left: 5px;
+    position: sticky;
+    top: 0;
+}
+
+#show_my_all_details_section #show_my_all_details_article div p {
+    padding: 3px 3px 3px 25px;
+    background-color: ;
+    font-size: 22px;
+    color: #4a4646;
+
+
+}
+
+#show_my_all_details_section #user_details_image #name_under_profile_pic {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.16);
+    font-size: 22px;
+    margin-top: 0px;
+    color: #4a4646;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* For MODAL ----------START------------- */
+
+/* The Modal (background) */
+.modall {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10000;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentt {
+    overflow-y: auto;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 485px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+/*@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+*/
+/* The Close Button */
+.closee {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closee:hover,
+.closee:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-headerr {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-bodyy {
+    padding: 20px 16px;
+}
+
+.modal-footerr {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-bodyy form {
+    background-image: url(../images/con/contacts.gif);
+    /* linear-gradient(-90deg,  rgba(226, 255, 0, 0.48),rgba(255, 0, 0, 0.44));*/
+    background-size: contain;
+    padding-top: 20px;
+    background-position: -130px 50%;
+    padding-left: 190px;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding-bottom: 20px;
+
+}
+
+.modal-bodyy form:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.modal-bodyy form .item {
+    margin-bottom: 10px;
+}
+
+.modal-bodyy form #div_inside_contact_form {
+    /*   background-image:   linear-gradient(-90deg,  rgba(226, 255, 0, 0.48),rgba(255, 0, 0, 0.44));
+*/
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+
+
+.modal-bodyy form .field {
+    display: inline-block;
+}
+
+.modal-bodyy form .button-wrapper {
+    background-color: orange;
+    margin-top: 18px;
+    font-size: 20px;
+    max-width: 463px;
+}
+
+.modal-bodyy form .button-wrapper .discard_button_div {
+    display: inline-block;
+    background-color: red;
+    
+
+}
+.modal-bodyy #contacts-op-discard, #contacts-op-save{
+    cursor: pointer;
+}
+
+.modal-bodyy form .button-wrapper .save_button_div {
+    display: inline-block;
+    background-color: red;
+    float: right;
+    
+}
+
+/* For MODAL ----------END------------- */
+
+
+.right_aside_collections {
+    /* overflow:scroll;*/
+    /*background-color: red*/
+}
+
+.contacts_table {
+    margin-left: 0px;
+    width: 100%;
+}
+
+.contacts_table tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#songs_table_up_div {
+    width: 850px;
+    overflow: auto;
+    border: 10px solid pink;
+    max-height: 350px;
+    margin-bottom: 80px;
+    /* background-color: green;*/
+
+}
+
+.song_table {
+    margin-left: 0px;
+    width: 100%;
+
+}
+
+.song_table tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+
+
+
+
+
+
+
+#edit_contact_div {
+    padding: 20px 36px;
+}
+
+#edit_contact_div form {
+    background-image: url(../images/con/contacts.gif);
+    /* linear-gradient(-90deg,  rgba(226, 255, 0, 0.48),rgba(255, 0, 0, 0.44));*/
+    background-size: contain;
+    padding-top: 20px;
+
+    padding-left: 190px;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-bottom: 20px;
+    background-color: pink;
+    padding-right: 10px;
+    background-position: -130px 50%;
+    transition: 0.3s;
+
+}
+
+#edit_contact_div form:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-position: -145px 50%;
+
+}
+
+#edit_contact_div form .item {
+    margin-bottom: 10px;
+}
+
+#edit_contact_div form #div_inside_contact_form {
+    /*   background-image:   linear-gradient(-90deg,  rgba(226, 255, 0, 0.48),rgba(255, 0, 0, 0.44));
+*/
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    /*background-color: whitesmoke;
+*/
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.44), rgba(226, 255, 0, 0.48));
+}
+
+
+#edit_contact_div form .field {
+    display: inline-block;
+}
+
+#edit_contact_div form input[type='text'] {
+    color: #555;
+}
+
+#edit_contact_div form .button-wrapper {
+    background-color: orange;
+    margin-top: 18px;
+    font-size: 20px;
+    max-width: 463px;
+}
+
+#edit_contact_div form .button-wrapper .discard_button_div {
+    display: inline-block;
+    background-color: red;
+
+}
+
+#edit_contact_div form .button-wrapper .save_button_div {
+    display: inline-block;
+    background-color: red;
+    float: right;
+
+}
+
+
+
+
+/* SONG SONG SONG stylesheets -----START---- */
+/* SONG SONG SONG stylesheets -----START---- */
+
+
+/* For MODAL ----------START------------- */
+
+/* The Modal (background) */
+.modall_song {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10000;
+    /* Sit on top */
+    padding-top: 70px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+.modall_song #close_button_for_song,
+#contacts-form #close_button_for_song {
+    background-color: red;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+    border-top-right-radius: 5px;
+}
+
+.modall_song #close_button_for_song .closee_song,
+#contacts-form #close_button_for_song .closee_song {
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.modall_song #close_button_for_song .closee_song:hover,
+.modall_song #close_button_for_song .closee_song:focus,
+#contacts-form #close_button_for_song .closee_song:hover {
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#edit_contact_div_song {
+    padding: 20px 36px;
+    overflow-y: auto;
+    width: 850px;
+    left: 50px;
+    position: relative;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#edit_contact_div_song form {
+    background-image: url(../images/music3.png);
+    /* linear-gradient(-90deg,  rgba(226, 255, 0, 0.48),rgba(255, 0, 0, 0.44));*/
+    background-size: contain;
+    padding-top: 20px;
+
+    padding-left: 190px;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-bottom: 20px;
+    background-color: pink;
+    padding-right: 10px;
+    background-position: -80px 50%;
+    transition: 0.3s;
+
+}
+
+#edit_contact_div_song form:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-position: -124px 50%;
+}
+
+#edit_contact_div_song form .item {
+    margin-bottom: 10px;
+}
+
+#edit_contact_div_song form #div_inside_contact_form_song {
+    /*   background-image:   linear-gradient(-90deg,  rgba(226, 255, 0, 0.48),rgba(255, 0, 0, 0.44));
+*/
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    /*background-color: whitesmoke;
+*/
+    background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.44), rgba(226, 255, 0, 0.48));
+}
+
+
+#edit_contact_div_song form .field {
+    display: inline-block;
+}
+
+#edit_contact_div_song form input[type='text'] {
+    color: #555;
+}
+
+#edit_contact_div_song form .button-wrapper {
+    background-color: orange;
+    margin-top: 18px;
+    font-size: 20px;
+    max-width: 463px;
+}
+
+#edit_contact_div_song form .button-wrapper .discard_button_div {
+    display: inline-block;
+    background-color: red;
+}
+
+#edit_contact_div_song form .button-wrapper .save_button_div {
+    display: inline-block;
+    background-color: red;
+    float: right;
+}
+
+/*SONG SONG SONG stylesheets ------ENDS---- */
+/*SONG SONG SONG stylesheets ------ENDS---- */
+
+
+
+
+/* TABLET view-------START------ */
+
+/* The device with borders */
+.tablet {
+    position: relative;
+    width: 768px;
+    height: 450px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+
+
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+
+
+}
+
+.tablet:before,
+.tablet:after {
+    transition-duration: 2s;
+}
+
+.tablet:hover:after,
+.tablet:hover:before {
+    background: #f3f3f3;
+    transition-duration: 0.6s;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+    width: 768px;
+    height: 100%;
+    background: white;
+    margin: -1px;
+    overflow: auto;
+    opacity: 0.45;
+    transition-duration: 2s;
+    /*filter: blur(1.3px);*/
+
+}
+
+.tablet:hover .content {
+    opacity: 0.9;
+    transition-duration: 0.6s;
+    /*filter: blur(0px);*/
+}
+
+/* SCROLLBAR STYLING --------------STRAT----------- */
+/* SCROLLBAR STYLING --------------STRAT----------- */
+
+.tablet .content::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F555;
+    border-radius: 12px
+}
+
+.tablet .content::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(190deg, rgba(255, 0, 0, 0.44), rgba(226, 255, 0, 0.48));
+    border-bottom: 1px solid hotpink;
+    border-top: 1px solid hotpink;
+    border-radius: 12px;
+}
+
+/* SCROLL BAR STYLING --------------ENDS----------- */
+/* SCROLL BAR STYLING --------------ENDS----------- */
+/* TABLET view-------END------ */
